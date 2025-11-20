@@ -53,13 +53,39 @@ function App() {
     }
   };
 
-  const handleServiceRequest = (e) => {
-    e.preventDefault();
-    // For now just demo; later we can hook this to a real API/email service
-    alert(
-      "Service request submitted! We’ll wire this to a real email/API when you’re ready to deploy."
-    );
+  const handleServiceRequest = async (e) => {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = new FormData(form);
+
+  const payload = {
+    name: formData.get("name"),
+    email: formData.get("email"),
+    phone: formData.get("phone"),
+    serviceType: formData.get("serviceType"),
+    message: formData.get("message"),
   };
+
+  try {
+    const res = await fetch("/api/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+
+    if (!res.ok) {
+      throw new Error("Request failed");
+    }
+
+    form.reset();
+    alert("Thanks! Your request has been sent. We’ll get back to you soon.");
+  } catch (err) {
+    console.error(err);
+    alert("Sorry, something went wrong sending your request. You can always call 907-406-7901.");
+  }
+};
+
 
   return (
     <div className="site">
