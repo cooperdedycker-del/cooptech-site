@@ -398,7 +398,8 @@ function App() {
               </p>
               <p>
                 <strong>Phone:</strong>{" "}
-                <a href="tel:19074067901">907-406-7901</a>
+                <a href="tel:907-406-7901" className="phone-container">907-406-7901</a>
+                
               </p>
             </div>
 
@@ -468,8 +469,7 @@ function App() {
               </button>
 
               <p className="helper">
-                Later, we can wire this form into a real email/CRM using
-                Resend, GoHighLevel, or a Vercel serverless function.
+               No commitment by requesting contact from CoopTech. We are easy going and want to help. Submit a contact request and we will give you a call.
               </p>
             </form>
           </div>
