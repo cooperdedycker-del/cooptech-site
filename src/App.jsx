@@ -93,7 +93,13 @@ function App() {
       <header className="navbar">
         <div className="container navbar-inner">
           <div className="brand">
-            <div className="brand-mark">AK</div>
+            <div className="brand-mark">
+  <img 
+    src="/images/cooptech-favicon.jpg" 
+    alt="CoopTech Logo"
+    className="brand-logo"
+  />
+</div>
             <div className="brand-text">
               <span className="brand-name">CoopTech</span>
               <span className="brand-tagline">Trusted IT Support in Alaska</span>

@@ -142,6 +142,12 @@ main {
   color: #fff7df;
   box-shadow: 0 0 24px rgba(228, 142, 34, 0.7);
 }
+.brand-logo {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  display: block;
+}
 
 :root.light .brand-mark {
   background: radial-gradient(circle at 30% 0, #ffe2b5, #fff7ef);
