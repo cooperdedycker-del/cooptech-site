@@ -95,7 +95,7 @@ function App() {
           <div className="brand">
             <div className="brand-mark">
   <img 
-    src="/images/cooptech-favicon.jpg" 
+    src="/images/cooptech-favicon.png" 
     alt="CoopTech Logo"
     className="brand-logo"
   />
@@ -160,7 +160,7 @@ function App() {
             <div className="hero-card slide-up">
               {/* Hero image – put a real pic here */}
               <img
-                src="/images/Alaska shape.png"
+                src="/images/cooptech-favicon.png"
                 alt="Tech support at home"
                 className="hero-image"
               />
@@ -273,7 +273,7 @@ function App() {
               <div className="pricing-card hover-raise">
                 <div className="badge">Most Popular</div>
                 <h3>In-Home Tech Help</h3>
-                <p className="price">Call for Rate</p>
+                <p className="price">$150 + $50/h</p>
                 <ul>
                   <li>Computer help, WiFi, smart home, TV, & more</li>
                   <li>Travel within local service area</li>
@@ -283,7 +283,7 @@ function App() {
 
               <div className="pricing-card hover-raise">
                 <h3>Remote Support</h3>
-                <p className="price">Call for Rate</p>
+                <p className="price">$50/h</p>
                 <ul>
                   <li>Help over the phone or remote desktop</li>
                   <li>Quick fixes without a house visit</li>
